@@ -1,11 +1,11 @@
-<div class="sidenav">
+<div class="sidenav" [ngClass]="  collapsed ? 'sidenav-collapsed':''     " >
    
-  <img width="150" src="assets/mango2.PNG" alt="My Image">
+ 
 
     <div class="logo-container">
-        <button class="logo"></button>
-        <div class="logo-text"></div>
-        <button class="btn-close"></button>
+        <!-- <button class="logo">A</button> -->
+        <img width="150" src="assets/mango2.PNG" alt="My Image">
+        
     </div>
     <ul class="sidenav-nav">
         <li class="sidenav-nav-item"  *ngFor="let data of navData" >
