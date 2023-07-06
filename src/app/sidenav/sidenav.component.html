@@ -1,0 +1,19 @@
+<div class="sidenav" [ngClass]="  collapsed ? 'sidenav-collapsed':''     " >
+   
+ 
+
+    <div class="logo-container">
+        <!-- <button class="logo">A</button> -->
+        <img width="150" src="assets/mango2.PNG" alt="My Image">
+        
+    </div>
+    <ul class="sidenav-nav">
+        <li class="sidenav-nav-item"  *ngFor="let data of navData" >
+            <a  class="sidenav-nav-link" [routerLink]="[data.routeLink]">
+                <i class="sidenav-link-icon" [class]="data.icon"></i>
+                <span class="sidenav-link-text">{{data.label}} </span>
+            </a>
+
+        </li>
+    </ul>
+</div>
